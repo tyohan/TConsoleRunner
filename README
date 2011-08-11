@@ -1,19 +1,18 @@
 This extension is a trigger for console application. It's will call and running console command that already defined in protected/commands directory on background.
 
-##Requirements
+REQUIREMENT
 Console application
 
 
-##Usage
+USAGE
 
 1. Put TConsoleRunner.php on extensions or components directory
 2. Create your console.php file or use that included in this extensions and put it on root directory of your application or same location with index.php.
 3. Create your console command and put it on protected/commands directory
 4. Trigger the console command from your web application like this:
 
-~~~
-[php]
+
 $console=new TConsoleRunner('console.php');
 $console->run('parsing filetoparse.xls');
 $console->run('sendnotifemail tyohan@myemail.com');
-~~~
+
